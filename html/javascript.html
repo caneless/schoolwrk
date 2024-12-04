@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/stil.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/javascript.css">
+    <title>javascript</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./boxmodel.html">Boxmodel</a></li>
+            <li><a href="./senddata.html">Senddata</a></li>
+            <li><a href="./photogalleri.html">Photo</a></li>
+            <li><a href="./javascript.html">Javascript</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <!--Output text wroten-->
+        <div>
+            <p>Print out and update text below the update text button</p>
+            <input type="textbox" placeholder="Skriv innhold her" id="inputText">
+            <input type="button" value="Update text" onclick="updateText()">
+            <p id="updatedText"></p>
+        </div>
+        <!--Click image to expand-->
+        <div>
+            <p>Modal image</p>
+            <img src="../image/IMG_0621.jpg" alt="" id="thumbnail">
+        </div>
+        <div id="imageModal" class="modal">
+            <span class="close">&times;</span>
+            <div class="modal-content">
+              <img id="expandedImg" src="" alt="Expanded View">
+            </div>
+          </div>
+          <!--Form validation-->
+          <div>
+            <p>Form validation <br>Please fill out the form below!</p>
+            <input type="text" placeholder="Name" id="name">
+            <input type="email" placeholder="email" id="email">
+            <input type="textbox" placeholder="Message" id="message">
+            <input type="button" value="Send info" onclick="sendMessage()">
+            <p id="error"></p>
+            <p id="success"></p>
+          </div>
+          <!--Dark mode-->
+          <div>
+            <p>Change from light to dark mode</p>
+            <input type="button" value="Dark mode" id="darkModeToggle" onclick="darkModeToggle()">
+          </div>
+          <!--Teller-->
+          <div>
+            <p>Counter <br>Press - to lower the value & + to increase the value</p>
+            <input type="button" value="-" onclick="decrease()">
+            <p id="tall">0</p>
+            <input type="button" value="+" onclick="increase()">
+          </div>
+          <!--Slideshow bilder-->
+          <div>
+            <p>Image preview slideshow</p>
+            <div class="slideshow-container">
+                <div class="slide" id="slide-1">
+                    <img src="../image/IMG_0621.jpg" alt="Image 1">
+                </div>
+                <div class="slide" id="slide-2">
+                    <img src="image2.jpg" alt="Image 2">
+                </div>
+                <div class="slide" id="slide-3">
+                    <img src="image3.jpg" alt="Image 3">
+                </div>
+            </div><br>
+                <input type="button" value="Previous" id="prevBtn">
+                <input type="button" value="Next" id="nextBtn"><br>
+          </div>
+    </section>
+
+    <script src="../javascript/slideshow.js"></script>
+    <script src="../javascript/teller.js"></script>
+    <script src="../javascript/darkMode.js"></script>
+    <script src="../javascript/printtext.js"></script>
+    <script src="../javascript/sendMessage.js"></script>
+    <script src="../javascript/modal.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+section div {
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section div div {
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+section img {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1vh;
+}

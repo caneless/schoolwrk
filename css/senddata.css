@@ -1,0 +1,18 @@
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inndata {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw;
+}
+.inndata input {
+    margin-top: 1vw;
+    padding: 0.5vw;
+}

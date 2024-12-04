@@ -1,0 +1,21 @@
+#sidelengs {
+    background-color: #543525;
+    width: 10vh;
+    color: #ffffff;
+    border-radius: 15px;
+    text-align: center;
+    border: 4px solid #000000;
+    animation: sidlengs 5s infinite;
+    position: relative;
+}
+@keyframes sidlengs {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 92%;
+    }
+    100% {
+        left: 0;
+    }
+}
